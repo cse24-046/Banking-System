@@ -16,13 +16,13 @@ public class Main {
         ChequeAccount cheque = bank.openCheque(customer, "CA001", empInfo);
 
         // Transactions
-        bank.deposit(savings, 1000);
-        bank.deposit(investment, 2000);
-        bank.deposit(cheque, 1500);
+        bank.deposit(savings, 1000.00);
+        bank.deposit(investment, 2000.00);
+        bank.deposit(cheque, 1500.00);
 
         // Withdraw
-        bank.withdraw(cheque, 500);
-        bank.withdraw(investment, 800);
+        bank.withdraw(cheque, 500.00);
+        bank.withdraw(investment, 800.00);
 
         // Apply interest
         bank.applyInterest(savings);
