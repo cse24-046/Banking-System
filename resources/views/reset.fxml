@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DialogPane?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<DialogPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="480.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+    <header>
+      <AnchorPane fx:id="resetPane" minHeight="0.0" minWidth="0.0" prefHeight="273.0" prefWidth="480.0">
+         <children>
+            <Label fx:id="resetLabel" layoutX="151.0" layoutY="20.0" prefHeight="26.0" prefWidth="165.0" text="RESET PASSWORD">
+               <font>
+                  <Font name="Trebuchet MS" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="nPasswordLabel" layoutX="56.0" layoutY="114.0" prefHeight="18.0" prefWidth="113.0" text="NEW PASSWORD" />
+            <Label fx:id="confirmLabel" layoutX="56.0" layoutY="160.0" prefHeight="18.0" prefWidth="170.0" text="CONFIRM NEW PASSWORD" />
+            <TextField fx:id="nPasswordField" layoutX="279.0" layoutY="110.0" onAction="#handleNPassword" prefHeight="26.0" prefWidth="174.0" promptText="enter new password" />
+            <TextField fx:id="confirmField" layoutX="279.0" layoutY="147.0" onAction="#handleConfirm" promptText="confirm password" />
+            <Button fx:id="resetButton" layoutX="213.0" layoutY="217.0" mnemonicParsing="false" onAction="#handleReset" text="RESET" />
+            <Label fx:id="rusernameLabel" layoutX="56.0" layoutY="66.0" prefHeight="18.0" prefWidth="139.0" text="USERNAME" />
+            <TextField fx:id="rusernameField" layoutX="280.0" layoutY="72.0" onAction="#handlerusername" promptText="enter username" />
+         </children></AnchorPane>
+    </header>
+    <content>
+      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="320.0" />
+    </content>
+    <expandableContent>
+      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="320.0" />
+    </expandableContent>
+</DialogPane>

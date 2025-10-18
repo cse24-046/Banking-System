@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckMenuItem?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="TransferPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="243.0" layoutY="39.0" prefHeight="30.0" prefWidth="154.0" text="TRANSFER">
+         <font>
+            <Font name="Trebuchet MS" size="20.0" />
+         </font>
+      </Label>
+      <MenuButton fx:id="fromMenu" layoutX="133.0" layoutY="103.0" mnemonicParsing="false" onAction="#handleFrom" text="FROM">
+         <items>
+            <CheckMenuItem fx:id="savingsItem" mnemonicParsing="false" onAction="#selectSavings" text="SAVINGS" />
+            <CheckMenuItem fx:id="investmentItem" mnemonicParsing="false" onAction="#selectInvestment" text="INVESTMENT" />
+            <CheckMenuItem fx:id="chequeItem" mnemonicParsing="false" onAction="#selectCheque" text="CHEQUE" />
+         </items>
+      </MenuButton>
+      <MenuButton fx:id="toMenu" layoutX="432.0" layoutY="103.0" mnemonicParsing="false" onAction="#handleTo" text="TO">
+         <items>
+            <CheckMenuItem fx:id="sItem" mnemonicParsing="false" onAction="#selectS" text="SAVINGS" />
+            <CheckMenuItem fx:id="iItem" mnemonicParsing="false" onAction="#selectI" text="INVESTMENT" />
+            <CheckMenuItem fx:id="cItem" mnemonicParsing="false" onAction="#selectC" text="CHEQUE" />
+         </items>
+      </MenuButton>
+      <Button fx:id="transferButton" layoutX="254.0" layoutY="301.0" mnemonicParsing="false" onAction="#handleTransfer" text="TRANSFER" />
+      <Button fx:id="backButton" layoutX="33.0" layoutY="24.0" mnemonicParsing="false" onAction="#handleBack" text="BACK" />
+   </children>
+</AnchorPane>
