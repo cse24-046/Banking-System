@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane fx:id="dashboradPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label fx:id="dashboardLabel" layoutX="34.0" layoutY="22.0" prefHeight="26.0" prefWidth="230.0" text="WELCOME! [USERNAME]">
+         <font>
+            <Font name="Trebuchet MS" size="20.0" />
+         </font>
+      </Label>
+      <Button fx:id="savingsButton" layoutX="69.0" layoutY="108.0" mnemonicParsing="false" onAction="#openSavings" prefHeight="30.0" prefWidth="161.0" text="SAVINGS ACCOUNT" />
+      <Button fx:id="investmentButton" layoutX="69.0" layoutY="187.0" mnemonicParsing="false" onAction="#openInvestment" text="INVESTMENT ACCOUNT" />
+      <Button fx:id="chequeButton" layoutX="69.0" layoutY="264.0" mnemonicParsing="false" onAction="#openCheque" prefHeight="30.0" prefWidth="161.0" text="CHEQUE ACCOUNT" />
+      <Button fx:id="transferButton" layoutX="349.0" layoutY="146.0" mnemonicParsing="false" onAction="#openTransfer" prefHeight="30.0" prefWidth="162.0" text="TRANSFER" />
+      <Button fx:id="transactionButton" layoutX="349.0" layoutY="233.0" mnemonicParsing="false" onAction="#openTransaction" text="TRANSACTION HISTORY" />
+      <Button fx:id="logoutButton" layoutX="460.0" layoutY="23.0" mnemonicParsing="false" onAction="#handleLogout" text="LOG OUT" />
+   </children>
+</AnchorPane>
