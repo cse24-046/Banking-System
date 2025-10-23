@@ -10,7 +10,7 @@
     <header>
       <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="163.0" prefWidth="393.0">
          <children>
-            <Label layoutX="128.0" layoutY="60.0" prefHeight="42.0" prefWidth="224.0" text="INCORRECT LOGIN DETAILS" textFill="#c11010">
+            <Label layoutX="66.0" layoutY="66.0" prefHeight="82.0" prefWidth="347.0" text="INCORRECT LOGIN CREDENTIALS. TRY AGAIN" textFill="#c11010">
                <font>
                   <Font name="System Bold" size="15.0" />
                </font>

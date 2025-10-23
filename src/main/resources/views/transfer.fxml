@@ -4,6 +4,7 @@
 <?import javafx.scene.control.CheckMenuItem?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
@@ -30,5 +31,7 @@
       </MenuButton>
       <Button fx:id="transferButton" layoutX="254.0" layoutY="301.0" mnemonicParsing="false" onAction="#handleTransfer" text="TRANSFER" />
       <Button fx:id="backButton" layoutX="33.0" layoutY="24.0" mnemonicParsing="false" onAction="#handleBack" text="BACK" />
+      <Label fx:id="amountLabel" layoutX="178.0" layoutY="219.0" text="AMOUNT" />
+      <TextField fx:id="amountField" layoutX="246.0" layoutY="216.0" onAction="#handleAmount" promptText="BWP" />
    </children>
 </AnchorPane>

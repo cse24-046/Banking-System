@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DialogPane?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<DialogPane fx:id="registerPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="480.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+    <header>
+      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="314.0" prefWidth="480.0">
+         <children>
+            <Label fx:id="signupLabel" layoutX="202.0" layoutY="14.0" text="SIGN UP">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="signuserLabel" layoutX="71.0" layoutY="72.0" text="USERNAME" />
+            <Label fx:id="signpassLabel" layoutX="71.0" layoutY="118.0" text="PASSWORD" />
+            <TextField fx:id="signuserField" layoutX="175.0" layoutY="69.0" onAction="#handleSignuser" />
+            <TextField fx:id="signpassField" layoutX="176.0" layoutY="115.0" onAction="#handleSignpass" />
+            <Button fx:id="registerButton" layoutX="203.0" layoutY="215.0" mnemonicParsing="false" onAction="#handleRegister" text="REGISTER" />
+            <Label fx:id="consignPass" layoutX="71.0" layoutY="169.0" text="CONFIRM PASSWORD" />
+            <TextField fx:id="consignpassField" layoutX="231.0" layoutY="166.0" onAction="#handleConsignpass" />
+         </children></AnchorPane>
+    </header>
+    <content>
+      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="320.0" />
+    </content>
+    <expandableContent>
+      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="320.0" />
+    </expandableContent>
+</DialogPane>
