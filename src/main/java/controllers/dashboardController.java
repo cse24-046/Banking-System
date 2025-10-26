@@ -1,118 +1,130 @@
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
-import javafx.scene.control.CheckMenuItem;
+import javafx.scene.control.DatePicker;
 import javafx.scene.control.Label;
-import javafx.scene.control.ListView;
-import javafx.scene.control.MenuButton;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.AnchorPane;
 
-public class PleaseProvideControllerClassName {
+public class DashboardController {
 
     @FXML
-    private MenuButton accMenu;
+    private Button SButton;
 
     @FXML
-    private CheckMenuItem accdetItem;
+    private TextField addressField;
 
     @FXML
-    private CheckMenuItem balItem;
+    private Label addressLabel;
 
     @FXML
-    private CheckMenuItem cheItem;
+    private Button cLabel;
 
     @FXML
-    private Label dashboardLabel;
+    private Button cLogoutButton;
 
     @FXML
-    private AnchorPane dashboradPane;
+    private TextField cNameField;
 
     @FXML
-    private MenuButton detMenu;
+    private Label cNameLabel;
 
     @FXML
-    private CheckMenuItem invItem;
+    private TextField cNumberField;
 
     @FXML
-    private Button logoutButton;
+    private Label cNumberLabel;
 
     @FXML
-    private Button reloadButton;
+    private Label companyLabel;
 
     @FXML
-    private CheckMenuItem savItem;
+    private Label contactLabel;
 
     @FXML
-    private CheckMenuItem transItem;
+    private Label creationLabel;
 
     @FXML
-    private Button transferButton;
+    private AnchorPane creationPane;
 
     @FXML
-    private TextField username;
+    private Label dobLabel;
 
     @FXML
-    private ListView<?> viewResults;
+    private DatePicker dobPicker;
 
     @FXML
-    void dropAccMenu(ActionEvent event) {
-
-    }
+    private Label doeLabel;
 
     @FXML
-    void dropDet(ActionEvent event) {
-
-    }
+    private DatePicker doePicker;
 
     @FXML
-    void handleLogout(ActionEvent event) {
-
-    }
+    private TextField empField;
 
     @FXML
-    void handleReload(ActionEvent event) {
-
-    }
+    private Label empLabel;
 
     @FXML
-    void openTransfer(ActionEvent event) {
-
-    }
+    private TextField firstnameField;
 
     @FXML
-    void selctBal(ActionEvent event) {
-
-    }
+    private Label firstnameLabel;
 
     @FXML
-    void selctInv(ActionEvent event) {
-
-    }
+    private Button iLabel;
 
     @FXML
-    void selectAccdet(ActionEvent event) {
-
-    }
+    private TextField idField;
 
     @FXML
-    void selectChe(ActionEvent event) {
-
-    }
+    private Label idLabel;
 
     @FXML
-    void selectSav(ActionEvent event) {
-
-    }
+    private Label individualLabel;
 
     @FXML
-    void selectTrans(ActionEvent event) {
-
-    }
+    private TextField lastnameField;
 
     @FXML
-    void showUsername(ActionEvent event) {
+    private Label lastnameLabel;
 
-    }
+    @FXML
+    void handleC(ActionEvent event) {}
 
+    @FXML
+    void handleCLogout(ActionEvent event) {}
+
+    @FXML
+    void handleCName(ActionEvent event) {}
+
+    @FXML
+    void handleCNumber(ActionEvent event) {}
+
+    @FXML
+    void handleDob(ActionEvent event) {}
+
+    @FXML
+    void handleDoe(ActionEvent event) {}
+
+    @FXML
+    void handleEmp(ActionEvent event) {}
+
+    @FXML
+    void handleField(ActionEvent event) {}
+
+    @FXML
+    void handleI(ActionEvent event) {}
+
+    @FXML
+    void handleId(ActionEvent event) {}
+
+    @FXML
+    void handleLastname(ActionEvent event) {}
+
+    @FXML
+    void handleS(ActionEvent event) {}
+
+    @FXML
+    void handlefirstname(ActionEvent event) {}
 }
