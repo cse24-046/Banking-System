@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER" spacing="20.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.banking.controllers.LoginController" stylesheets="@styles.css">
+
+    <children>
+        <Label text="Banking System" textAlignment="CENTER" styleClass="title-label"/>
+
+        <VBox alignment="CENTER_LEFT" spacing="15.0" styleClass="card">
+            <Label text="Login" styleClass="subtitle-label"/>
+
+            <VBox spacing="10.0">
+                <Label text="User Type:"/>
+                <HBox spacing="20.0">
+                    <RadioButton fx:id="customerRadio" text="Customer"/>
+                    <RadioButton fx:id="clerkRadio" text="Bank Clerk"/>
+                </HBox>
+            </VBox>
+
+            <VBox spacing="10.0">
+                <Label text="Username/Customer ID:"/>
+                <TextField fx:id="usernameField" promptText="Enter username or customer ID" styleClass="input-field"/>
+            </VBox>
+
+            <VBox spacing="10.0">
+                <Label text="Password:"/>
+                <PasswordField fx:id="passwordField" promptText="Enter password" styleClass="input-field"/>
+            </VBox>
+
+            <Label fx:id="messageLabel" wrapText="true"/>
+
+            <Button mnemonicParsing="false" onAction="#handleLogin" text="Login" styleClass="primary-btn"/>
+        </VBox>
+    </children>
+
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+    </padding>
+</VBox>

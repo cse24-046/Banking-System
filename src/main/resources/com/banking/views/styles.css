@@ -1,0 +1,142 @@
+   /*ROOT*/
+.root {
+    -fx-font-family: "Segoe UI", "Roboto", sans-serif;
+    -fx-background-color: linear-gradient(to bottom right, #1e3c72, #2a5298);
+    -fx-text-fill: #ffffff; 
+}
+/* TITLES*/
+.title-label {
+    -fx-font-size: 28px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #e0f7ff;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.4), 2, 0, 0, 2);
+}
+.subtitle-label {
+    -fx-font-size: 18px;
+    -fx-font-weight: 500;
+    -fx-text-fill: #cceeff; /* secondary labels */
+}
+/*BUTTONS*/
+.button {
+    -fx-background-radius: 12;
+    -fx-font-weight: bold;
+    -fx-padding: 10 20;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.3), 6,0,0,3);
+}
+.primary-btn {
+    -fx-background-color: #2196f3;
+    -fx-text-fill: white;
+}
+.primary-btn:hover {
+    -fx-background-color: #42a5f5;
+}
+.success-btn {
+    -fx-background-color: #4caf50;
+    -fx-text-fill: white;
+}
+.success-btn:hover {
+    -fx-background-color: #66bb6a;
+}
+.danger-btn {
+    -fx-background-color: #f44336;
+    -fx-text-fill: white;
+}
+.danger-btn:hover {
+    -fx-background-color: #e57373;
+}
+/*INPUT FIELDS / TEXT AREAS / COMBOBOXES*/
+.input-field, .combo-box, .text-area {
+    -fx-background-color: rgba(255,255,255,0.15); /* glassy effect */
+    -fx-text-fill: #e0f7ff;
+    -fx-border-color: rgba(255,255,255,0.3);
+    -fx-border-radius: 10;
+    -fx-background-radius: 10;
+    -fx-padding: 6 10;
+    -fx-prompt-text-fill: rgba(255,255,255,0.7);
+}
+.input-field:focused, .combo-box:focused, .text-area:focused {
+    -fx-border-color: #00bfff;
+}
+/*CARDS / PANES*/
+.card {
+    -fx-background-color: rgba(255,255,255,0.12); /* glassy */
+    -fx-border-color: rgba(0,191,255,0.3);
+    -fx-border-radius: 15;
+    -fx-background-radius: 15;
+    -fx-padding: 20;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.25), 8,0,0,4);
+}
+.card-label, .card-text {
+    -fx-text-fill: #e0f7ff;
+    -fx-font-weight: 500;
+}
+/*HEADER BAR*/
+.header-bar {
+    -fx-background-color: rgba(0,120,255,0.8);
+    -fx-padding: 15px;
+    -fx-text-fill: white;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.3), 4,0,0,2);
+}
+/*LISTVIEWS*/
+.list-view {
+    -fx-background-color: rgba(255,255,255,0.1);
+    -fx-border-color: rgba(0,191,255,0.4);
+    -fx-border-radius: 10;
+    -fx-background-radius: 10;
+    -fx-text-fill: #e0f7ff;
+}
+/* SPLIT PANE*/
+.split-pane {
+    -fx-background-color: transparent;
+}
+/* MESSAGES*/
+.message-label {
+    -fx-text-fill: #00ffff;
+    -fx-font-weight: bold;
+}
+/*SEPARATORS*/
+.separator {
+    -fx-background-color: rgba(0,191,255,0.5);
+    -fx-padding: 1;
+}
+/*SCROLLPANE*/
+.scroll-pane {
+    -fx-background: transparent;
+}
+/*TAB PANE*/
+.tab-pane .tab-header-area {
+    -fx-background-color: rgba(33,150,243,0.6); /* glassy blue */
+    -fx-padding: 5;
+}
+.tab-pane .tab {
+    -fx-background-insets: 0;
+    -fx-background-radius: 12 12 0 0;
+    -fx-border-color: rgba(255,255,255,0.3);
+    -fx-border-width: 1;
+    -fx-text-base-color: white;
+    -fx-font-weight: bold;
+}
+.tab-pane .tab:selected {
+    -fx-background-color: rgba(33,150,243,0.9);
+    -fx-text-fill: white;
+}
+
+/* SCROLLABLE TEXTAREAS IN CARDS*/
+.text-area.card-text {
+    -fx-background-color: rgba(255,255,255,0.08); /* glassy panel */
+    -fx-text-fill: #e0f7ff;
+    -fx-border-color: rgba(0,191,255,0.3);
+    -fx-border-radius: 10;
+    -fx-background-radius: 10;
+    -fx-font-weight: 500;
+}
+
+/*OVERRIDES FOR SPECIFIC TEXTS TO BLACK*/
+#customerDetailsArea,
+#transactionArea,
+#accountLimitsText Label {
+    -fx-text-fill: black; 
+}
